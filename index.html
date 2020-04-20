@@ -11,8 +11,6 @@
     <script type="text/javascript" async="" src="./assets/analytics.js"></script>
     <script type="text/javascript" async="" src="./assets/f.txt"></script>
     <script type="text/javascript" async="" src="./assets/analytics.js"></script>
-    <script src="./assets/sdk.js" async="" crossorigin="anonymous"></script>
-    <script id="facebook-jssdk" src="./assets/sdk(1).js"></script>
     <script async="" src="./assets/gtm.js"></script>
     <script src="./assets/webfont.js" type="text/javascript" async=""></script>
     <script async="" src="./assets/gtm(1).js"></script>
@@ -169,7 +167,7 @@
         border: 1px solid #ffac95;
         padding: 0.75px 1rem;
         height: 2.507em;
-        font-size: .97em;
+        font-size: 0.97em;
       }
       .getfly-form {
         padding: 1rem 2rem;
@@ -179,10 +177,31 @@
         color: #e54f24;
         margin-left: 5px;
       }
-      .getfly-mt10.getfly-btn{
+      .getfly-mt10.getfly-btn {
         margin: 1.5rem 0px;
       }
-      .getfly-mt10.getfly-btn button{
+      #message a{
+        position: fixed;
+        bottom: 114px;
+        left: 8px !important;
+        width: 50px ;
+        height: 50px ;
+        background: #0084ff;
+        background: -moz-linear-gradient(45deg, #0084ff 0%, #15ddba 100%);
+        background: -webkit-linear-gradient(45deg, #0084ff 0%, #15ddba 100%);
+        background: linear-gradient(45deg, #0084ff 0%, #15ddba 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0084ff', endColorstr='#15ddba', GradientType=1);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #message a svg{
+        width: 30px;
+        height: 30px;
+        fill: white
+      }
+      .getfly-mt10.getfly-btn button {
         padding: 10px;
         border-radius: 3px;
         background: #f76e43;
@@ -746,9 +765,7 @@
                       <a href="#lien-he">Liên hệ</a>
                     </li>
                     <li class="search hidden-xs">
-                      <a href="?fbclid=IwAR3U1PqC77PDZhu4eTw-jqVjMhalq_7jhMaeH6HZ1zX0Nxcf-VNf6_ve1C8#"
-                        ><i class="fa fa-search"></i
-                      ></a>
+                      <a href="?fbclid=IwAR3U1PqC77PDZhu4eTw-jqVjMhalq_7jhMaeH6HZ1zX0Nxcf-VNf6_ve1C8#"><i class="fa fa-search"></i></a>
                       <div class="search_form" style="display: none;">
                         <form method="get" class="searchform" action="http://roxanaplazabinhduong.com/" role="search">
                           <div class="flex-center relative">
@@ -917,10 +934,13 @@
                           data-options='{"params":{"u":"6","r":"6","key":"o1sgndjN42","os":"30","source":"https:\/\/saviland.getflycrm.com","at":""},"fields":[{"type":"input","key":"account_name","label":"T\u00ean kh\u00e1ch h\u00e0ng","require":true,"placeholder":""},{"type":"phone","key":"account_phone","label":"\u0110i\u1ec7n tho\u1ea1i","require":true,"placeholder":""},{"type":"email","key":"account_email","label":"Email","require":false,"placeholder":""},{"type":"textarea","key":"account_description","label":"M\u00f4 t\u1ea3","require":false,"placeholder":""}],"customFields":[],"action":{"url_success":"","message_success":""},"text":"\u0110\u0103ng k\u00fd","type_css":"left","hide":false,"user_id":"1","key":"lgWNj4uBnYvPq3q687oqvAJ5L7H7iKZuvPxR5LEVoUopwHKZhe","custom_vals":".getfly-form{max-width:450px!important;margin:0 auto;padding:25px!important;font-size: 12px;line-height:30px!important;color:#777;border: 1px solid #eae6e6; font-family: sans-serif;background: #fff !important;}\n.getfly-input{width:95%!important;border:1px solid #CCC;background:#FFF;padding:10px;outline: 0;}\n.getfly-select{width:100%!important;border:1px solid #CCC;background:#FFF;padding:10px 0px 10px 10px;outline: 0;}\n.getfly-textarea{width:97.5%!important;border:1px solid #CCC;background:#FFF;padding:10px 5px;outline: 0;height:50px;}\n.getfly-button{cursor:pointer;border:none;background:#f58632;color:#FFF;padding:10px 20px; font-size:18px;outline: 0;font-family: sans-serif;}\n.getfly-span{color:#f58632;font-size: 20px;font-weight: bold;float: none!important;}\n.getfly-label{display:block!important;}\n.getfly-mt10{margin-top:10px;}\n.getfly-label-c{color:#777 !important;}\n.getfly-span-c{color:#f58632 !important;}\n.getfly-button-bg{background:#f58632 !important;}\n.getfly-form input, select, textarea{border:1px solid #ccc !important;}\n@media (max-width: 480px) {.getfly-input{width: 93% !important;}.getfly-textarea{width: 96%!important;}}\n.getfly-margin{margin: 5px;}"}'
                         >
                           <div>
-                            <form id="getfly-form" class="getfly-form" method="POST" action="https://formspree.io/donghoang177@gmail.com
-">
-                              
-
+                            <form
+                              id="getfly-form"
+                              class="getfly-form"
+                              method="POST"
+                              action="https://formspree.io/donghoang177@gmail.com
+"
+                            >
                               <div class="getfly-row">
                                 <label class="getfly-label getfly-label-c"
                                   >Tên khách hàng<span class="getfly-span getfly-span-c">*</span></label
@@ -953,7 +973,7 @@
                                 <label class="getfly-label getfly-label-c">Mô tả</label>
                                 <textarea name="abc" class="getfly-textarea" placeholder=""></textarea>
                               </div>
-                              <input type="text" name="_gotcha" style="display:none" />
+                              <input type="text" name="_gotcha" style="display: none;" />
                               <div class="getfly-mt10 getfly-btn"><button class="getfly-button getfly-button-bg">Đăng ký</button></div>
                             </form>
                           </div>
@@ -1267,40 +1287,101 @@
                             <span>ROXANA PLAZA<span></span></span>
                           </h3>
                         </div>
-                        <section class="dns_gallery  " id="">
-                            <h2 class="title-section text-center"></h2>
-                            <div id="slide-show">
-                                <div id="main-image-slider" class="gallery_slider owl-carousel  owl-theme owl-loaded owl-drag">
-                                                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2850px, 0px, 0px); transition: all 0.25s ease 0s; width: 6650px;"><div class="owl-item cloned" style="width: 950px;"><div class="msritems">
-                                    <a href="./assets/viethome-mat-bang-tang_2_web.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
-                                                    <img src="./assets/viethome-mat-bang-tang_2_web-750x380.jpg" class="img-responsive" alt="">
-                                                    </a>
-                                                </div></div><div class="owl-item cloned" style="width: 950px;"><div class="msritems">
-                                    <a href="./assets/viethome-mat-bang-tang_5_web.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
-                                                    <img src="./assets/viethome-mat-bang-tang_5_web-750x380.jpg" class="img-responsive" alt="">
-                                                    </a>
-                                                </div></div><div class="owl-item" style="width: 950px;"><div class="msritems">
-                                    <a href="./assets/viethome-mat-bangtang_1_web_1.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
-                                                    <img src="./assets/viethome-mat-bangtang_1_web_1-750x380.jpg" class="img-responsive" alt="">
-                                                    </a>
-                                                </div></div><div class="owl-item active" style="width: 950px;"><div class="msritems">
-                                    <a href="./assets/viethome-mat-bang-tang_2_web.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
-                                                    <img src="./assets/viethome-mat-bang-tang_2_web-750x380.jpg" class="img-responsive" alt="">
-                                                    </a>
-                                                </div></div><div class="owl-item" style="width: 950px;"><div class="msritems">
-                                    <a href="./assets/viethome-mat-bang-tang_5_web.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
-                                                    <img src="./assets/viethome-mat-bang-tang_5_web.jpg" class="img-responsive" alt="">
-                                                    </a>
-                                                </div></div><div class="owl-item cloned" style="width: 950px;"><div class="msritems">
-                                    <a href="./assets/viethome-mat-bangtang_1_web_1.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
-                                                    <img src="./assets/viethome-mat-bangtang_1_web_1-750x380.jpg" class="img-responsive" alt="">
-                                                    </a>
-                                                </div></div><div class="owl-item cloned" style="width: 950px;"><div class="msritems">
-                                    <a href="./assets/viethome-mat-bang-tang_2_web.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
-                                                    <img src="./assets/viethome-mat-bang-tang_2_web-750x380.jpg" class="img-responsive" alt="">
-                                                    </a>
-                                                </div></div></div></div><div class="owl-nav"><div class="owl-prev"><i class="fa fa-angle-left"></i></div><div class="owl-next"><i class="fa fa-angle-right"></i></div></div><div class="owl-dots disabled"></div></div>
+                        <section class="dns_gallery" id="">
+                          <h2 class="title-section text-center"></h2>
+                          <div id="slide-show">
+                            <div id="main-image-slider" class="gallery_slider owl-carousel owl-theme owl-loaded owl-drag">
+                              <div class="owl-stage-outer">
+                                <div
+                                  class="owl-stage"
+                                  style="transform: translate3d(-2850px, 0px, 0px); transition: all 0.25s ease 0s; width: 6650px;"
+                                >
+                                  <div class="owl-item cloned" style="width: 950px;">
+                                    <div class="msritems">
+                                      <a
+                                        href="./assets/viethome-mat-bang-tang_2_web.jpg"
+                                        class="light_box prettyphoto"
+                                        data-rel="prettyPhoto[rel-pgdns]"
+                                      >
+                                        <img src="./assets/viethome-mat-bang-tang_2_web-750x380.jpg" class="img-responsive" alt="" />
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="owl-item cloned" style="width: 950px;">
+                                    <div class="msritems">
+                                      <a
+                                        href="./assets/viethome-mat-bang-tang_5_web.jpg"
+                                        class="light_box prettyphoto"
+                                        data-rel="prettyPhoto[rel-pgdns]"
+                                      >
+                                        <img src="./assets/viethome-mat-bang-tang_5_web-750x380.jpg" class="img-responsive" alt="" />
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="owl-item" style="width: 950px;">
+                                    <div class="msritems">
+                                      <a
+                                        href="./assets/viethome-mat-bangtang_1_web_1.jpg"
+                                        class="light_box prettyphoto"
+                                        data-rel="prettyPhoto[rel-pgdns]"
+                                      >
+                                        <img src="./assets/viethome-mat-bangtang_1_web_1-750x380.jpg" class="img-responsive" alt="" />
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="owl-item active" style="width: 950px;">
+                                    <div class="msritems">
+                                      <a
+                                        href="./assets/viethome-mat-bang-tang_2_web.jpg"
+                                        class="light_box prettyphoto"
+                                        data-rel="prettyPhoto[rel-pgdns]"
+                                      >
+                                        <img src="./assets/viethome-mat-bang-tang_2_web-750x380.jpg" class="img-responsive" alt="" />
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="owl-item" style="width: 950px;">
+                                    <div class="msritems">
+                                      <a
+                                        href="./assets/viethome-mat-bang-tang_5_web.jpg"
+                                        class="light_box prettyphoto"
+                                        data-rel="prettyPhoto[rel-pgdns]"
+                                      >
+                                        <img src="./assets/viethome-mat-bang-tang_5_web.jpg" class="img-responsive" alt="" />
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="owl-item cloned" style="width: 950px;">
+                                    <div class="msritems">
+                                      <a
+                                        href="./assets/viethome-mat-bangtang_1_web_1.jpg"
+                                        class="light_box prettyphoto"
+                                        data-rel="prettyPhoto[rel-pgdns]"
+                                      >
+                                        <img src="./assets/viethome-mat-bangtang_1_web_1-750x380.jpg" class="img-responsive" alt="" />
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="owl-item cloned" style="width: 950px;">
+                                    <div class="msritems">
+                                      <a
+                                        href="./assets/viethome-mat-bang-tang_2_web.jpg"
+                                        class="light_box prettyphoto"
+                                        data-rel="prettyPhoto[rel-pgdns]"
+                                      >
+                                        <img src="./assets/viethome-mat-bang-tang_2_web-750x380.jpg" class="img-responsive" alt="" />
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="owl-nav">
+                                <div class="owl-prev"><i class="fa fa-angle-left"></i></div>
+                                <div class="owl-next"><i class="fa fa-angle-right"></i></div>
+                              </div>
+                              <div class="owl-dots disabled"></div>
                             </div>
+                          </div>
                         </section>
                         <div id="dns_title1170295693" class="dns_title dns_title395540861 text-center gcolor">
                           <h2 class="title">
@@ -1321,220 +1402,140 @@
                                 >
                                   <div class="owl-item cloned" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/6.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/6.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/6-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item cloned" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/7.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/7.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/7-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item cloned" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/8.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/8.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/8-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item cloned" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/9.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/9.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/9-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item cloned" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/10.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/10.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/10-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item active" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/1.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/1.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/1-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/2.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/2.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/2-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/3.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/3.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/3-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/4.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/4.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/4-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/5.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/5.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/5-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/6.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/6.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/6-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/7.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/7.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/7-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/8.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/8.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/8-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/9.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/9.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/9-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/10.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/10.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/10-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item cloned" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/1.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/1.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/1-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item cloned" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/2.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/2.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/2-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item cloned" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/3.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/3.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/3-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item cloned" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/4.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/4.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/4-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
                                   </div>
                                   <div class="owl-item cloned" style="width: 950px;">
                                     <div class="msritems">
-                                      <a
-                                        href="./assets/5.png"
-                                        class="light_box prettyphoto"
-                                        data-rel="prettyPhoto[rel-pgdns]"
-                                      >
+                                      <a href="./assets/5.png" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pgdns]">
                                         <img src="./assets/5-750x380.png" class="img-responsive" alt="" />
                                       </a>
                                     </div>
@@ -1584,44 +1585,28 @@
                               >
                                 <div class="owl-item cloned" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-5.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-5.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-5-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-4.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-4.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-4-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-10.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-10.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-10-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-3.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-3.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-3-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
@@ -1672,132 +1657,84 @@
                                 </div>
                                 <div class="owl-item active" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-2.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-2.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-2-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-1.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-1.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-1-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-12.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-12.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-12-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-11.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-11.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-11-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-9.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-9.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-9-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-8.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-8.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-8-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-7.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-7.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-7-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-6.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-6.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-6-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-5.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-5.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-5-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-4.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-4.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-4-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-10.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-10.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-10-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-3.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-3.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-3-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
@@ -1848,88 +1785,56 @@
                                 </div>
                                 <div class="owl-item cloned" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-2.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-2.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-2-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-1.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-1.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-1-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-12.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-12.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-12-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-11.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-11.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-11-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-9.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-9.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-9-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-8.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-8.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-8-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-7.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-7.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-7-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 1042px;">
                                   <div class="glrid-item">
-                                    <a
-                                      href="./assets/phoicanh-6.jpg"
-                                      class="light_box prettyphoto"
-                                      data-rel="prettyPhoto[rel-pdns]"
-                                    >
+                                    <a href="./assets/phoicanh-6.jpg" class="light_box prettyphoto" data-rel="prettyPhoto[rel-pdns]">
                                       <img src="./assets/phoicanh-6-568x320.jpg" alt="" class="img-responsive center-block" />
                                     </a>
                                   </div>
@@ -2856,43 +2761,47 @@
                           </h2>
                         </div>
                         <div class="" style="display: flex;">
-                            <form id="getfly-form" class="getfly-form col-md-6" style="margin: 1rem auto;" method="POST" action="https://formspree.io/donghoang177@gmail.com
-"> 
-                              <div class="getfly-row">
-                                <label class="getfly-label getfly-label-c"
-                                  >Tên khách hàng<span class="getfly-span getfly-span-c">*</span></label
-                                >
-                                <input type="input" class="getfly-input" name="account_name" placeholder="" />
-                              </div>
-                              <div class="getfly-row">
-                                <label class="getfly-label getfly-label-c"
-                                  >Điện thoại<span class="getfly-span getfly-span-c">*</span></label
-                                >
-                                <input
-                                  type="text"
-                                  name="account_phone"
-                                  id="account_phone"
-                                  class="getfly-input"
-                                  placeholder="VD: 0123456789"
-                                />
-                              </div>
-                              <div class="getfly-row">
-                                <label class="getfly-label getfly-label-c">Email</label>
-                                <input
-                                  type="text"
-                                  name="account_email"
-                                  id="account_email"
-                                  class="getfly-input email"
-                                  placeholder="vidu@mail.com"
-                                />
-                              </div>
-                              <div class="getfly-row">
-                                <label class="getfly-label getfly-label-c">Mô tả</label>
-                                <textarea name="account_description" class="getfly-textarea" placeholder=""></textarea>
-                              </div>
-                              <div class="getfly-mt10 getfly-btn"><button class="getfly-button getfly-button-bg">Đăng ký</button></div>
-                            </form>
-                          </div>
+                          <form
+                            id="getfly-form"
+                            class="getfly-form col-md-6"
+                            style="margin: 1rem auto;"
+                            method="POST"
+                            action="https://formspree.io/donghoang177@gmail.com
+"
+                          >
+                            <div class="getfly-row">
+                              <label class="getfly-label getfly-label-c"
+                                >Tên khách hàng<span class="getfly-span getfly-span-c">*</span></label
+                              >
+                              <input type="input" class="getfly-input" name="account_name" placeholder="" />
+                            </div>
+                            <div class="getfly-row">
+                              <label class="getfly-label getfly-label-c">Điện thoại<span class="getfly-span getfly-span-c">*</span></label>
+                              <input
+                                type="text"
+                                name="account_phone"
+                                id="account_phone"
+                                class="getfly-input"
+                                placeholder="VD: 0123456789"
+                              />
+                            </div>
+                            <div class="getfly-row">
+                              <label class="getfly-label getfly-label-c">Email</label>
+                              <input
+                                type="text"
+                                name="account_email"
+                                id="account_email"
+                                class="getfly-input email"
+                                placeholder="vidu@mail.com"
+                              />
+                            </div>
+                            <div class="getfly-row">
+                              <label class="getfly-label getfly-label-c">Mô tả</label>
+                              <textarea name="account_description" class="getfly-textarea" placeholder=""></textarea>
+                            </div>
+                            <div class="getfly-mt10 getfly-btn"><button class="getfly-button getfly-button-bg">Đăng ký</button></div>
+                          </form>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3032,8 +2941,8 @@
       </div>
     </div>
     <!-- Facebook Messenger Bar -->
-    <div id="fbmsg">
-      <a class="fbmsg-badge"  href="https://www.facebook.com/dong.hoang.378">
+    <!-- <div id="fbmsg">
+      <a class="fbmsg-badge" href="https://www.facebook.com/dong.hoang.378">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -3054,7 +2963,32 @@
           ></path>
         </svg>
       </a>
+    </div> -->
+
+    <div id="message">
+      <a class="" href="https://www.facebook.com/dong.hoang.378">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+          id="Facebook_Messenger"
+          x="0px"
+          y="0px"
+          width="322px"
+          height="324px"
+          viewBox="96 93 322 324"
+          style="enable-background: new 96 93 322 324;"
+          xml:space="preserve"
+        >
+          <path
+            style="fill: white;"
+            d="M257,93c-88.918,0-161,67.157-161,150c0,47.205,23.412,89.311,60,116.807V417l54.819-30.273    C225.449,390.801,240.948,393,257,393c88.918,0,161-67.157,161-150S345.918,93,257,93z M273,295l-41-44l-80,44l88-94l42,44l79-44    L273,295z"
+          ></path>
+        </svg>
+      </a>
     </div>
+
+
     <div id="fb-root" class="fb_reset">
       <div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div>
     </div>
