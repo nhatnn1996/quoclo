@@ -7,7 +7,6 @@
   <!--<!
   [endif]--><!-- Google Tag Manager --><head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <script async="" src="./assets/fbevents.js"></script>
     <script type="text/javascript" async="" src="./assets/analytics.js"></script>
     <script type="text/javascript" async="" src="./assets/f.txt"></script>
     <script type="text/javascript" async="" src="./assets/analytics.js"></script>
@@ -183,7 +182,7 @@
       #message a{
         position: fixed;
         bottom: 114px;
-        left: 8px !important;
+        left: 8px;
         width: 50px ;
         height: 50px ;
         background: #0084ff;
@@ -195,7 +194,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
       }
+
+      @media only screen and (max-width: 650px) {
+        #message a {
+          bottom: 8px;
+          left: 114px ;
+          }
+        }
       #message a svg{
         width: 30px;
         height: 30px;
@@ -913,7 +920,7 @@
                           <div class="wpb_wrapper">
                             <a
                               class="sbtn"
-                              href="http://roxanaplazabinhduong.com/?fbclid=IwAR3U1PqC77PDZhu4eTw-jqVjMhalq_7jhMaeH6HZ1zX0Nxcf-VNf6_ve1C8#lien-he"
+                              href="#lien-he"
                               >Đăng ký ngay!</a
                             >
                           </div>
@@ -979,69 +986,6 @@
                           </div>
                         </div>
                         <p>
-                          <script type="text/javascript">
-                            (function () {
-                              var r = window.document.referrer != "" ? window.document.referrer : window.location.origin;
-                              var regex = /(https?:\/\/.*?)\//g;
-                              var furl = regex.exec(r);
-                              r = furl ? furl[0] : r;
-                              var f = document.createElement("iframe");
-                              const url_string = new URLSearchParams(window.location.search);
-                              var utm_source, utm_campaign, utm_medium, utm_content, utm_term;
-                              if (
-                                (!url_string.has("utm_source") || url_string.get("utm_source") == "") &&
-                                document.cookie.match(new RegExp("utm_source" + "=([^;]+)")) != null
-                              ) {
-                                r += "&" + document.cookie.match(new RegExp("utm_source" + "=([^;]+)"))[0];
-                              } else {
-                                r += url_string.get("utm_source") != null ? "&utm_source=" + url_string.get("utm_source") : "";
-                              }
-                              if (
-                                (!url_string.has("utm_campaign") || url_string.get("utm_campaign") == "") &&
-                                document.cookie.match(new RegExp("utm_campaign" + "=([^;]+)")) != null
-                              ) {
-                                r += "&" + document.cookie.match(new RegExp("utm_campaign" + "=([^;]+)"))[0];
-                              } else {
-                                r += url_string.get("utm_campaign") != null ? "&utm_campaign=" + url_string.get("utm_campaign") : "";
-                              }
-                              if (
-                                (!url_string.has("utm_medium") || url_string.get("utm_medium") == "") &&
-                                document.cookie.match(new RegExp("utm_medium" + "=([^;]+)")) != null
-                              ) {
-                                r += "&" + document.cookie.match(new RegExp("utm_medium" + "=([^;]+)"))[0];
-                              } else {
-                                r += url_string.get("utm_medium") != null ? "&utm_medium=" + url_string.get("utm_medium") : "";
-                              }
-                              if (
-                                (!url_string.has("utm_content") || url_string.get("utm_content") == "") &&
-                                document.cookie.match(new RegExp("utm_content" + "=([^;]+)")) != null
-                              ) {
-                                r += "&" + document.cookie.match(new RegExp("utm_content" + "=([^;]+)"))[0];
-                              } else {
-                                r += url_string.get("utm_content") != null ? "&utm_content=" + url_string.get("utm_content") : "";
-                              }
-                              if (
-                                (!url_string.has("utm_term") || url_string.get("utm_term") == "") &&
-                                document.cookie.match(new RegExp("utm_term" + "=([^;]+)")) != null
-                              ) {
-                                r += "&" + document.cookie.match(new RegExp("utm_term" + "=([^;]+)"))[0];
-                              } else {
-                                r += url_string.get("utm_term") != null ? "&utm_term=" + url_string.get("utm_term") : "";
-                              }
-                              f.setAttribute(
-                                "src",
-                                "https://saviland.getflycrm.com/api/forms/viewform/?key=lgWNj4uBnYvPq3q687oqvAJ5L7H7iKZuvPxR5LEVoUopwHKZhe&referrer=" +
-                                  r
-                              );
-                              f.style.width = "500px";
-                              f.style.height = "500px";
-                              f.setAttribute("frameborder", "0");
-                              f.setAttribute("marginheight", "0");
-                              f.setAttribute("marginwidth", "0");
-                              var s = document.getElementById("getfly-optin-form-iframe-1565314317414");
-                              s.appendChild(f);
-                            })();
-                          </script>
                           <br />
                         </p>
                       </div>
@@ -2808,69 +2752,6 @@
                 </div>
                 <div class="vc_row-full-width vc_clearfix"></div>
                 <p>
-                  <script type="text/javascript">
-                    (function () {
-                      var r = window.document.referrer != "" ? window.document.referrer : window.location.origin;
-                      var regex = /(https?:\/\/.*?)\//g;
-                      var furl = regex.exec(r);
-                      r = furl ? furl[0] : r;
-                      var f = document.createElement("iframe");
-                      const url_string = new URLSearchParams(window.location.search);
-                      var utm_source, utm_campaign, utm_medium, utm_content, utm_term;
-                      if (
-                        (!url_string.has("utm_source") || url_string.get("utm_source") == "") &&
-                        document.cookie.match(new RegExp("utm_source" + "=([^;]+)")) != null
-                      ) {
-                        r += "&" + document.cookie.match(new RegExp("utm_source" + "=([^;]+)"))[0];
-                      } else {
-                        r += url_string.get("utm_source") != null ? "&utm_source=" + url_string.get("utm_source") : "";
-                      }
-                      if (
-                        (!url_string.has("utm_campaign") || url_string.get("utm_campaign") == "") &&
-                        document.cookie.match(new RegExp("utm_campaign" + "=([^;]+)")) != null
-                      ) {
-                        r += "&" + document.cookie.match(new RegExp("utm_campaign" + "=([^;]+)"))[0];
-                      } else {
-                        r += url_string.get("utm_campaign") != null ? "&utm_campaign=" + url_string.get("utm_campaign") : "";
-                      }
-                      if (
-                        (!url_string.has("utm_medium") || url_string.get("utm_medium") == "") &&
-                        document.cookie.match(new RegExp("utm_medium" + "=([^;]+)")) != null
-                      ) {
-                        r += "&" + document.cookie.match(new RegExp("utm_medium" + "=([^;]+)"))[0];
-                      } else {
-                        r += url_string.get("utm_medium") != null ? "&utm_medium=" + url_string.get("utm_medium") : "";
-                      }
-                      if (
-                        (!url_string.has("utm_content") || url_string.get("utm_content") == "") &&
-                        document.cookie.match(new RegExp("utm_content" + "=([^;]+)")) != null
-                      ) {
-                        r += "&" + document.cookie.match(new RegExp("utm_content" + "=([^;]+)"))[0];
-                      } else {
-                        r += url_string.get("utm_content") != null ? "&utm_content=" + url_string.get("utm_content") : "";
-                      }
-                      if (
-                        (!url_string.has("utm_term") || url_string.get("utm_term") == "") &&
-                        document.cookie.match(new RegExp("utm_term" + "=([^;]+)")) != null
-                      ) {
-                        r += "&" + document.cookie.match(new RegExp("utm_term" + "=([^;]+)"))[0];
-                      } else {
-                        r += url_string.get("utm_term") != null ? "&utm_term=" + url_string.get("utm_term") : "";
-                      }
-                      f.setAttribute(
-                        "src",
-                        "https://saviland.getflycrm.com/api/forms/viewform/?key=lgWNj4uBnYvPq3q687oqvAJ5L7H7iKZuvPxR5LEVoUopwHKZhe&referrer=" +
-                          r
-                      );
-                      f.style.width = "500px";
-                      f.style.height = "500px";
-                      f.setAttribute("frameborder", "0");
-                      f.setAttribute("marginheight", "0");
-                      f.setAttribute("marginwidth", "0");
-                      var s = document.getElementById("getfly-optin-form-iframe-1565314417567");
-                      s.appendChild(f);
-                    })();
-                  </script>
                 </p>
               </div>
             </article>
@@ -3131,55 +3012,6 @@
       </div>
     </div>
     <div class="menu_overlay"></div>
-    <script type="text/javascript" id="">
-      !(function (b, e, f, g, a, c, d) {
-        b.fbq ||
-          ((a = b.fbq = function () {
-            a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments);
-          }),
-          b._fbq || (b._fbq = a),
-          (a.push = a),
-          (a.loaded = !0),
-          (a.version = "2.0"),
-          (a.queue = []),
-          (c = e.createElement(f)),
-          (c.async = !0),
-          (c.src = g),
-          (d = e.getElementsByTagName(f)[0]),
-          d.parentNode.insertBefore(c, d));
-      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-      fbq("init", "1776980639016931");
-      fbq("track", "PageView");
-    </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none;"
-        src="https://www.facebook.com/tr?id=1776980639016931&amp;ev=PageView&amp;noscript=1"
-    /></noscript>
-
-    <script type="text/javascript" id="">
-      !(function (b, e, f, g, a, c, d) {
-        b.fbq ||
-          ((a = b.fbq = function () {
-            a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments);
-          }),
-          b._fbq || (b._fbq = a),
-          (a.push = a),
-          (a.loaded = !0),
-          (a.version = "2.0"),
-          (a.queue = []),
-          (c = e.createElement(f)),
-          (c.async = !0),
-          (c.src = g),
-          (d = e.getElementsByTagName(f)[0]),
-          d.parentNode.insertBefore(c, d));
-      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-      fbq("init", "2376062029296545");
-      fbq("set", "agent", "tmgoogletagmanager", "2376062029296545");
-      fbq("track", "PageView");
-    </script>
     <noscript
       ><img
         height="1"
